@@ -17,6 +17,7 @@ export { GeolocationControlOptions } from './controls/GeoControl';
 export { ScaleControlOptions } from './controls/ScaleControl';
 export { OverviewMapControlOptions } from './controls/OverviewMapControl';
 export { NavigationControlOptions } from './controls/NavigationControl';
+export { PolylineControlOptions } from './controls/PolylineControl';
 export { Icon } from './interfaces/Icon';
 export { Size } from './interfaces/Size';
 export { ControlAnchor } from './enum/ControlAnchor';

@@ -14,6 +14,8 @@ var AppComponent = (function () {
             longitude: 120.195567,
             latitude: 30.184510
         };
+        this.poly1 = [120.195677, 30.184529];
+        this.poly2 = [120.193777, 30.184620];
         this.markers1 = [
             {
                 longitude: 120.195677,
@@ -53,6 +55,11 @@ var AppComponent = (function () {
             },
             navCtrl: {
                 type: index_1.NavigationControlType.BMAP_NAVIGATION_CONTROL_LARGE
+            },
+            polyCtrl: {
+                strokeColor: "red",
+                strokeWeight: 5,
+                strokeOpacity: 0.5
             }
         };
         this.offlineOpts = {

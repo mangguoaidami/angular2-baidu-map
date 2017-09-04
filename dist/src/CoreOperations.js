@@ -4,6 +4,7 @@ var GeoControl_1 = require("./controls/GeoControl");
 var ScaleControl_1 = require("./controls/ScaleControl");
 var OverviewMapControl_1 = require("./controls/OverviewMapControl");
 var NavigationControl_1 = require("./controls/NavigationControl");
+var PolylineControl_1 = require("./controls/PolylineControl");
 exports.reCenter = function (map, opts) {
     var BMap = window['BMap'];
     if (opts.center) {
@@ -24,6 +25,7 @@ exports.createInstance = function (opts, element) {
     NavigationControl_1.setNavigationCtrl(map, opts);
     ScaleControl_1.setScaleCtrl(map, opts);
     OverviewMapControl_1.setOverviewMapCtrl(map, opts);
+    PolylineControl_1.setpolylineCtrl(map, opts);
     if (opts.enableScrollWheelZoom) {
         //enable scroll wheel zoom
         map.enableScrollWheelZoom();

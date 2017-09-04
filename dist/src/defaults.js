@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.defaultOpts = {
     navCtrl: true,
+    polyCtrl: true,
     scaleCtrl: true,
     overviewCtrl: true,
     enableScrollWheelZoom: true,

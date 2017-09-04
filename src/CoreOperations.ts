@@ -5,6 +5,7 @@ import {setGeoCtrl} from './controls/GeoControl';
 import {setScaleCtrl} from './controls/ScaleControl';
 import {setOverviewMapCtrl} from './controls/OverviewMapControl';
 import {setNavigationCtrl} from './controls/NavigationControl';
+import { setpolylineCtrl } from './controls/PolylineControl';
 
 export const reCenter = function(map: any, opts: MapOptions) {
     var BMap: any = (<any>window)['BMap'];
@@ -30,6 +31,7 @@ export const createInstance = function(opts: MapOptions, element: any) {
     setNavigationCtrl(map, opts);
     setScaleCtrl(map, opts);
     setOverviewMapCtrl(map, opts);
+    setpolylineCtrl(map, opts);
     if (opts.enableScrollWheelZoom) {
         //enable scroll wheel zoom
         map.enableScrollWheelZoom();

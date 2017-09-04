@@ -2,6 +2,7 @@ import {MapDefaultOptions, OfflineOptions} from './interfaces/Options';
 
 export const defaultOpts: MapDefaultOptions = {
     navCtrl: true,
+    polyCtrl: true,
     scaleCtrl: true,
     overviewCtrl: true,
     enableScrollWheelZoom: true,

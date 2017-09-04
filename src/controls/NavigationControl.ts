@@ -32,9 +32,10 @@ export const setNavigationCtrl = function(map: any, opts: MapOptions) {
 };
 
 export interface NavigationControlOptions {
-    anchor?: ControlAnchor;
-    offset?: Size;
-    type?: NavigationControlType;
-    showZoomInfo?: boolean;
-    enableGeolocation?: boolean;
+    anchor?: ControlAnchor;     //控件的停靠位置
+    offset?: Size;      //控件的水平偏移值
+    type?: NavigationControlType;       //平移缩放控件的类型
+    showZoomInfo?: boolean;     //是否显示级别提示信息
+    enableGeolocation?: boolean;   //控件是否集成定位功能，默认为false
+    
 };

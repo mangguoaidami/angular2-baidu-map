@@ -6,6 +6,7 @@ import {ScaleControlOptions} from '../controls/ScaleControl';
 import {GeolocationControlOptions} from '../controls/GeoControl';
 import {OverviewMapControlOptions} from '../controls/OverviewMapControl';
 import {NavigationControlOptions} from '../controls/NavigationControl';
+import { PolylineControlOptions } from '../controls/PolylineControl';
 
 export interface MarkerOptions {
     longitude: number;
@@ -27,6 +28,7 @@ export interface MapDefaultOptions {
     enableScrollWheelZoom?: boolean;
     geolocationCtrl?: boolean | GeolocationControlOptions;
     zoom?: number;
+    polyCtrl?: boolean | PolylineControlOptions;
 }
 
 export interface MapOptions extends MapDefaultOptions {
@@ -38,3 +40,5 @@ export interface OfflineOptions {
     retryInterval?: number,
     txt?: string
 }
+
+

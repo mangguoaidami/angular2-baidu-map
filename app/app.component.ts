@@ -27,9 +27,12 @@ export class AppComponent {
     latitude: 30.184510
   };
 
+  poly1 = [120.195677, 30.184529];
+  poly2 = [120.193777, 30.184620]
+
   private markers1 = [
       {
-          longitude: 120.195677,
+          longitude: 120.195677,  
           latitude: 30.184529,
           title: 'I am here',
           content: 'hellow word',
@@ -66,6 +69,11 @@ export class AppComponent {
           },
           navCtrl: {
               type: NavigationControlType.BMAP_NAVIGATION_CONTROL_LARGE
+          },
+          polyCtrl : {
+            strokeColor:"red",
+             strokeWeight:5,
+              strokeOpacity:0.5
           }
       };
 
